@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#170f2b">
+<title>Feliz cumpleaños, Brigitte 🩶</title>
+<style>
+:root{--night:#100c20;--plum:#291638;--pink:#f1b9d0;--lav:#d7c0ff;--gold:#f5d99a;--white:#fff7ff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--white);font-family:Georgia,'Times New Roman',serif;background:radial-gradient(ellipse at 18% 18%,#50305e 0,transparent 35%),radial-gradient(ellipse at 85% 35%,#3b244e 0,transparent 34%),linear-gradient(145deg,#0b0a18,#21112d 55%,#100d20);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.5;background-image:radial-gradient(1px 1px at 10% 20%,white 98%,transparent),radial-gradient(2px 2px at 75% 12%,#f4d8ff 98%,transparent),radial-gradient(1px 1px at 40% 75%,white 98%,transparent),radial-gradient(1px 1px at 90% 82%,#f7d8a5 98%,transparent),radial-gradient(1px 1px at 23% 90%,white 98%,transparent);background-size:240px 220px;z-index:0}
+main{position:relative;z-index:1;max-width:850px;margin:auto;padding:28px 18px 80px}
+.topbar{display:flex;justify-content:flex-end}
+button{font:inherit;color:var(--white);border:1px solid #e9c9f477;background:#ffffff12;border-radius:999px;padding:11px 17px;cursor:pointer;backdrop-filter:blur(8px);transition:.25s}
+button:hover{background:#ffffff25;transform:translateY(-2px)}
+.hero{min-height:82vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:50px 12px;position:relative}
+.kicker{letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font:11px Arial,sans-serif}
+h1{font-size:clamp(42px,10vw,76px);font-weight:normal;line-height:1.05;margin:22px 0 12px;text-shadow:0 0 30px #dba9ff65}
+h1 span{color:var(--pink);font-style:italic}
+.subtitle{max-width:520px;line-height:1.8;color:#f1e4f4;font-size:17px}
+.flower{font-size:42px;margin:18px 0;filter:drop-shadow(0 0 15px #e8b8ff66);animation:float 4s ease-in-out infinite}
+.cta{margin-top:22px;background:linear-gradient(120deg,#9b6eaa,#bd789d);border:0;color:white;padding:14px 24px;box-shadow:0 8px 30px #bd789d44}
+section{margin:32px 0;padding:30px clamp(18px,5vw,42px);border:1px solid #e7c5ef30;border-radius:24px;background:linear-gradient(145deg,#ffffff12,#ffffff06);box-shadow:0 18px 60px #00000022;backdrop-filter:blur(8px)}
+h2{font-size:clamp(26px,6vw,38px);font-weight:normal;text-align:center;color:var(--lav);margin:0 0 18px}
+.center{text-align:center}
+.letter{display:none;line-height:1.9;font-size:17px;color:#f9edf8;white-space:pre-line}
+.letter.show{display:block;animation:appear .9s ease}
+.small{font:12px Arial,sans-serif;letter-spacing:.08em;color:#d7c0df}
+.poem{line-height:2;font-size:16px;text-align:center;white-space:pre-line;color:#fff1fa}
+.poem .ending{color:var(--pink);font-style:italic;font-size:18px}
+.secret{display:none;text-align:center;line-height:1.8;font-size:18px;color:#ffe8f2;padding-top:18px}
+.secret.show{display:block;animation:appear .8s ease}
+footer{text-align:center;padding:42px 12px 20px;color:#d7c3df;line-height:1.8}
+footer strong{color:var(--pink);font-weight:normal}
+.petal{position:fixed;top:-30px;z-index:0;pointer-events:none;animation:fall linear forwards;opacity:.8}
+.spark{position:absolute;color:#f5d99a;animation:twinkle 2.5s infinite alternate}
+@keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(560deg);opacity:.1}}
+@keyframes float{50%{transform:translateY(-12px) rotate(4deg)}}
+@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes twinkle{to{opacity:.25;transform:scale(.7)}}
+@media(prefers-reduced-motion:reduce){*,*:before{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<main>
+  <div class="topbar"><button id="musicBtn" aria-label="Activar música suave">♫ Activar melodía</button></div>
+  <header class="hero">
+    <div class="kicker">Un pequeño universo para alguien especial</div>
+    <div class="flower">🪻 ✨ 🌹</div>
+    <h1>Feliz cumpleaños,<br><span>Brigitte</span></h1>
+    <p class="subtitle">Mi amor, sé que quizás este día no sea tu favorito. Por eso hice un pequeño rincón del universo: para dejarte un poquito de cariño, sin pedirte que celebres de ninguna manera.</p>
+    <button class="cta" onclick="document.getElementById('carta').scrollIntoView({behavior:'smooth'})">Hay algo que quiero decirte ↓</button>
+    <div class="spark" style="top:20%;left:12%;font-size:20px">✧</div>
+    <div class="spark" style="top:28%;right:12%;font-size:15px;animation-delay:1s">✦</div>
+    <div class="spark" style="bottom:18%;left:20%;font-size:13px;animation-delay:.5s">✧</div>
+  </header>
+
+  <section id="carta">
+    <div class="small center">PARA TI, MI NIÑA</div>
+    <h2>Unas palabras con cariño</h2>
+    <p class="center" style="color:#e9d8ec;line-height:1.8">No tienes que hacer nada especial para merecer algo bonito. Solo toca el botón cuando quieras leerlo.</p>
+    <div class="center"><button class="cta" id="letterBtn">Abrir mi cartita 🩶</button></div>
+    <div class="letter" id="letter">Mi amor,
+
+Sé que no siempre te gusta celebrar tu cumpleaños, y no quiero que sientas que tienes que hacerlo solo porque hoy sea una fecha especial. No necesitas una fiesta enorme, una sonrisa obligatoria ni palabras perfectas.
+
+Solo quería regalarte este pequeño detalle y recordarte que me importa que estés bien. Si hoy quieres reír, ojalá encuentres mil motivos; si prefieres un día tranquilo, también está bien. No tienes que convertirlo en algo distinto para que yo quiera acompañarte.
+
+Gracias por ser tú, por todo lo que has significado en mi vida y por las cosas bonitas que, incluso sin darte cuenta, has dejado en mí. Deseo que este nuevo año te traiga calma, oportunidades, personas que te cuiden y momentos que te hagan sentir feliz.
+
+Y si puedo aportar aunque sea un poquito a que tu día sea mejor, entonces este regalo ya habrá cumplido su propósito.
+
+Feliz cumpleaños, mi niña. Te quiero muchísimo. 🩶</div>
+  </section>
+
+  <section>
+    <div class="small center">UN REGALITO EN FORMA DE VERSOS</div>
+    <h2>Aunque no te guste celebrar</h2>
+    <div class="poem">Mi amor, hoy no quiero pedirte que sonrías,
+ni que celebres con entusiasmo este día;
+solo quiero regalarte un poquito de alegría,
+y recordarte lo especial que eres en mi vida.
+
+Sé que quizás no te emocione esta ocasión,
+que no siempre encuentres motivos para la celebración,
+pero mientras me permitas estar cerca de tu corazón,
+intentaré regalarte cariño en cada ocasión.
+
+Y si el mundo se olvida de hacerte sonreír,
+yo buscaré mil maneras de verte feliz;
+si no quieres una fiesta, no la tienes que fingir,
+me basta con acompañarte y estar junto a ti.
+
+No importa si no te gusta cumplir años,
+ni si prefieres pasar el día sin tantos halagos,
+yo seguiré recordándote, incluso en días cotidianos,
+que mereces cosas bonitas y cariño sin horarios.
+
+Mi niña, no prometo hacer perfecto tu cumpleaños,
+pero sí estar presente a través de los años;
+porque aunque el tiempo nos regale nuevos calendarios,
+siempre desearé verte feliz, incluso en los días más extraños.
+
+<span class="ending">Y si pudiera pedirle algo al universo por ti,
+sería que nunca te falten motivos para sonreír;
+que la vida te trate bonito en cada despertar,
+y que nunca olvides que aquí tendrás a alguien que te quiere acompañar.</span></div>
+  </section>
+
+  <section class="center">
+    <div class="small">ANTES DE QUE TE VAYAS...</div>
+    <h2>Hay una última cosita</h2>
+    <p style="line-height:1.8;color:#eadced">Hay un mensaje escondido para ti, mi amor.</p>
+    <button class="cta" id="secretBtn">Descubrir sorpresa ✨</button>
+    <div class="secret" id="secret">No importa cuántos cumpleaños pasen ni cuántas velitas haya en el pastel: siempre voy a desear que la vida te regale razones para estar bien. Y cuando no te apetezca celebrar, aquí habrá alguien dispuesto a hacerte compañía. <br><br><span style="color:#f1b9d0">Feliz cumpleaños, Brigitte. 🩶</span></div>
+  </section>
+  <footer>Hecho con cariño, especialmente para ti.<br><strong>Con mucho amor. 🐺🩶✨</strong></footer>
+</main>
+<script>
+const letterBtn=document.getElementById('letterBtn'), letter=document.getElementById('letter');
+letterBtn.addEventListener('click',()=>{letter.classList.toggle('show');letterBtn.textContent=letter.classList.contains('show')?'Cerrar cartita':'Abrir mi cartita 🩶'});
+const secretBtn=document.getElementById('secretBtn'), secret=document.getElementById('secret');
+secretBtn.addEventListener('click',()=>{secret.classList.toggle('show');secretBtn.textContent=secret.classList.contains('show')?'Guardar sorpresa':'Descubrir sorpresa ✨'});
+function petals(){const p=document.createElement('div');p.className='petal';p.textContent=['🌸','🪻','✧','🌹','💜'][Math.floor(Math.random()*5)];p.style.left=Math.random()*100+'vw';p.style.fontSize=(12+Math.random()*15)+'px';p.style.setProperty('--drift',(Math.random()*160-80)+'px');p.style.animationDuration=(8+Math.random()*9)+'s';document.body.appendChild(p);setTimeout(()=>p.remove(),18000)}
+setInterval(petals,850);
+let audioCtx=null,oscillators=[],musicOn=false;
+const musicBtn=document.getElementById('musicBtn');
+musicBtn.addEventListener('click',async()=>{
+  if(!musicOn){
+    const AC=window.AudioContext||window.webkitAudioContext;
+    if(!AC){musicBtn.textContent='Melodía no disponible';return}
+    audioCtx=new AC();await audioCtx.resume();
+    const master=audioCtx.createGain();master.gain.value=.035;master.connect(audioCtx.destination);
+    [261.63,329.63,392,493.88].forEach((freq,i)=>{const o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='sine';o.frequency.value=freq;g.gain.value=.18/(i+1);o.connect(g);g.connect(master);o.start();oscillators.push(o)});
+    musicOn=true;musicBtn.textContent='Ⅱ Pausar melodía';
+  }else{oscillators.forEach(o=>o.stop());oscillators=[];audioCtx.close();audioCtx=null;musicOn=false;musicBtn.textContent='♫ Activar melodía'}
+});
+</script>
+</body>
+</html>
